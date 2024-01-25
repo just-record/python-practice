@@ -26,7 +26,7 @@ def check_guess(random_number, guess_number, cnt, max_cnt):
 
 def main():
     random_number = random.randrange(1, 100)
-    # print(random_number) # for debugging
+    # print(random_number)
 
     cnt = 0
     max_cnt = 10

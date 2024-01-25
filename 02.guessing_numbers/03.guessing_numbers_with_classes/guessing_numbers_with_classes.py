@@ -32,7 +32,7 @@ class GuessingGame:
         return False
 
     def play(self):
-        # print(self.random_number)  # 게임 테스트용 출력, 실제 게임에서는 제거
+        # print(self.random_number)
         while True:
             guess_number_str = self.get_guess()
             self.input_numbers.append(guess_number_str)

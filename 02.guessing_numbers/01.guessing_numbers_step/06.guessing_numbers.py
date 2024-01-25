@@ -3,8 +3,7 @@
 import random
 
 random_number = random.randrange(1,100)
-# print(random_number) # for debugging
-
+# print(random_number)
 cnt = 0
 max_cnt = 10
 input_numbers = []
