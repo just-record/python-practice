@@ -1,7 +1,7 @@
 # 7번에서 입력한 줄 개수가 숫자가 아닐 경우 숫자를 입력할 때까지 계속 입력 받기
 
 while True:
-    num_lines_str = input('input number of lines: ')
+    num_lines_str = input('별의 줄 수를 입력하세요: ')
     if not num_lines_str.isdigit():
         print('입력하신 값이 숫자가 아닙니다!')
     else:
