@@ -1,9 +1,10 @@
 import random
 
 class NumbersBaseball:
-    def __init__(self, max_attempts=10):
+    def __init__(self, max_attempts=10, input_numbers=[]):
         self.random_numbers = self.generate_random_number()
         self.max_attempts = max_attempts
+        self.input_numbers = input_numbers
 
     def generate_random_number(self):
         random_numbers = ''
@@ -20,6 +21,8 @@ class NumbersBaseball:
                 print('입력하신 값이 3자리 숫자가 아닙니다!')
             elif len(set(guess_numbers)) != len(guess_numbers):
                 print('중복된 값을 입력하셨습니다.')
+            elif guess_numbers in self.input_numbers:
+                print('이전에 입력한 값입니다.')
             else:
                 return guess_numbers
 
@@ -37,6 +40,7 @@ class NumbersBaseball:
 
         for total_cnt in range(1, self.max_attempts + 1):
             guess_numbers = self.get_user_input()
+            self.input_numbers.append(guess_numbers)
             print(f'{total_cnt}번째 시도입니다.')
             strike, ball = self.analyze_guess(guess_numbers)
             print(f'{strike} Strike, {ball} Ball, {3 - (strike + ball)} Out')

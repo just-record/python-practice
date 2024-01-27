@@ -1,4 +1,4 @@
-# 숫자 야구 게임 완성하기
+# 이전에 입력한 숫자는 제외 하기
 
 import random
 
@@ -15,6 +15,7 @@ while True:
 # print(random_numbers)
 
 total_cnt, max_cnt = 0, 10
+input_numbers = []
 
 
 while True:
@@ -32,6 +33,12 @@ while True:
     if len(set(guess_numbers)) != len(guess_numbers):
         print('중복된 값을 입력하셨습니다.')
         continue
+
+    if guess_numbers in input_numbers:
+        print('이전에 입력한 값입니다.')
+        continue
+
+    input_numbers.append(guess_numbers)
 
     print(f'입력하신 값은 {guess_numbers}입니다.')
 
