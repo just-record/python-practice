@@ -87,6 +87,8 @@
     *********
     ```
 
+9. console이 아닌 파일에 별 그리기를 저장하기
+
 ## 02. 함수를 써서 별 그리기
 
 디렉토리: 02.drawing_stars_with_functions
