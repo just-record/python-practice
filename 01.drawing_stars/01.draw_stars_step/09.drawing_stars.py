@@ -9,6 +9,6 @@ while True:
 
 num_lines = int(num_lines_str)
 
-with open("start.txt", "w") as f:
+with open("star.txt", "w") as f:
     for i in range(num_lines):
         f.write((' ' * (num_lines - i - 1)) + '*' * (i*2+1) + '\n')
