@@ -6,4 +6,4 @@ class StarDrawer:
     def draw_stars(self):
         print(f'{self.alias}이(가) 그립니다.')
         for i in range(self.num_lines):
-            print((' ' * (self.num_lines - i)) + '*' * (i * 2 + 1))
+            print((' ' * (self.num_lines - i - 1)) + '*' * (i * 2 + 1))

@@ -8,7 +8,7 @@ def get_digit(input_message):
 
 def draw_stars(num_lines):
     for i in range(num_lines):
-        print((' ' * (num_lines - i)) + '*' * (i*2+1))
+        print((' ' * (num_lines - i - 1)) + '*' * (i*2+1))
 
 def main():
     input_message = '별의 줄 수를 입력하세요: '

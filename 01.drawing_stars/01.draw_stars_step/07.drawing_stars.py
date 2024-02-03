@@ -5,6 +5,6 @@ if num_lines_str.isdigit():
     num_lines = int(num_lines_str)
 
     for i in range(num_lines):
-        print((' ' * (num_lines - i)) + '*' * (i*2+1))          
+        print((' ' * (num_lines - i - 1)) + '*' * (i*2+1))          
 else:
     print('입력하신 값이 숫자가 아닙니다!')
