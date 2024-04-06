@@ -25,6 +25,11 @@
             <input type="hidden" id="player" name="player" value="{{ player }}">
         <p><input type="submit" value="도전" /></p>      
     </form>
+    {% else %}
+    <p><a href='/guess_number'>다시하기</a></p>
+    <p><a href='/'>메뉴로</a></p>    
     {% endif %}
+
+
 </body>
 </html>

@@ -6,6 +6,7 @@ from games.star_drawing.star_drawer import StarDrawer
 from games.star_drawing.utils import get_digit, get_alias
 
 import random
+import os
 
 app = Flask(__name__)
 
@@ -59,7 +60,10 @@ def guess_number_proc():
         message = '정답보다 값이 큽니다.'
     else:
         message = '정답입니다.'
-        is_right = True    
+        is_right = True
+        # 파일 삭제
+        delete_file = f'guess_number_{player}.txt'
+        os.remove(delete_file)
     if not is_right:
         with open(f'guess_number_{player}.txt', 'a') as f:
             f.write(str(guessed_number) + '\n')
