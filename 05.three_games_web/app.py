@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
 
-from games.guess_numbers.guessing_numbers import GuessingNumbers
-from games.number_baseball_game.numbers_baseball import NumbersBaseball
 from games.star_drawing.star_drawer import StarDrawer
-from games.star_drawing.utils import get_digit, get_alias
+from games.number_baseball_game.numbers_baseball import NumberBaseballGame
 
 import random
 import os
@@ -71,7 +69,8 @@ def guess_number_proc():
 
 @app.route('/number_baseball', methods=['GET'])
 def number_baseball():
-    return '<h1>number_baseball</h1>'          
+    return render_template('number_baseball.html')       
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5050', debug=True)
