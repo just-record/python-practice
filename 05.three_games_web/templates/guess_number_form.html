@@ -21,7 +21,7 @@
     {% if not is_right %}
     <form method="post" action="/guess_number_proc">
         <p>정답을 맞춰보세요!: 
-            <input type="text" id="guess" name="guess" value=""></p>
+            <input type="text" id="guess" name="guess"min="1" pattern="\d+" title="양의 정수만 입력해주세요." required></p>
             <input type="hidden" id="player" name="player" value="{{ player }}">
         <p><input type="submit" value="도전" /></p>      
     </form>
