@@ -43,32 +43,3 @@
 ### 04.three_games
 
 3가지 게임을 패키지로 만들고 3가지 중 하나를 선택하면 해당 게임을 실행 하도록 구현
-
-## 별그리기를 웹 서비스로 만들기
-
-별그리기 게임의 패키지를 사용하여 웹 서비스로 만들기
-
-- 해당 실습 프론트엔드(HTML, CSS, JavaScript)와 백엔드(Flask)의 사전 학습이 필요합니다.
-- 숫자 맞추기와 숫자 야구 게임을 웹 서비스로 만들기는 제외 했습니다.
-  - 패키지를 웹에 맞도록 수정해야 합니다.
-  - 웹의 작동 방식을 조금 더 깊이 있게 이해해야 합니다.
-
-### 05.three_games_web(작업중)
-
-작업 중입니다.
-
-Flask를 사용하여 별 그리기 게임을 웹 서비스로 만들기
-
-### requirements.txt
-
-웹 서비스를 만들기 위해서는 requirements.txt에 있는 패키지를 설치해야 합니다.
-
-```bash
-pip install -r requirements.txt
-```
-
-pip 업그레이드가 필요할 수 있습니다.
-
-```bash
-python.exe -m pip install --upgrade pip
-```
